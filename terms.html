@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tyfia AI</title>
+  <link rel="stylesheet" href="styles_terms.css">
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Company Name on the Left -->
+      <div class="navbar-brand">
+        <a href="index.html#home">Tyfia AI</a> <!-- Replace with your company name -->
+      </div>
+      
+      <div class="menu-container">
+        <div class="menu-btn" onclick="toggleMenu()">Menu</div>
+        <div class="dropdown-menu" id="dropdown-menu">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#technology">Technology</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>  
+    </div>
+    
+  </nav>
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('dropdown-menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+  
+
+  <!-- Terms and Conditions Section -->
+  <div id="terms" class="terms-section">
+    <div class="terms-container">
+      <!-- Left side table with links -->
+      <div class="terms-table">
+        <table>
+          <tr>
+            <td><a href="#section1">1. Use of the Website</a></td>
+          </tr>
+          <tr>
+            <td><a href="#section2">2. Data Collection</a></td>
+          </tr>
+          <tr>
+            <td><a href="#section3">3. Intellectual Property</a></td>
+          </tr>
+          <tr>
+            <td><a href="#section4">4. Third-Party Links</a></td>
+          </tr>
+          <tr>
+            <td><a href="#section5">5. Changes to Terms</a></td>
+          </tr>
+          <tr>
+          <tr>
+            <td><a href="#section6">6. Termination</a></td>
+          </tr>
+          </tr>
+            <td><a href="#section7">7. Contact Us</a></td>
+          </tr>
+        </table>
+      </div>
+      <!-- Right side Terms and Conditions text -->
+      <div class="terms-text">
+        <h2>Terms and Conditions</h2>
+        <p>Welcome to Tyfia AI! By using our website, you agree to these terms and conditions.</p>
+        <h3 id="section1">1. Use of the Website</h3>
+        <p>You can use our website to learn about our artificial intelligence services. Don’t use our website in ways that could harm it or interfere with other users.</p>
+
+        <h3 id="section2">2. Data Collection</h3>
+        <p>We use Google Analytics to understand how people use our website. This data is anonymized and doesn’t include personal information. Learn more about Google Analytics in their <a href="https://www.google.com/analytics/terms/">Terms of Service</a>.</p>
+
+        <h3 id="section3">3. Intellectual Property</h3>
+        <p>All content on our website belongs to Tyfia AI. You can’t use it without our permission.</p>
+
+        <h3 id="section4">4. Third-Party Links</h3>
+        <p>Our website may have links to other websites. We’re not responsible for the content or privacy practices of those sites.</p>
+
+        <h3 id="section5">5. Changes to Terms</h3>
+        <p>We can update these terms at any time. If we do, the new terms will be posted here. By continuing to use our website, you accept the new terms.</p>
+
+        <h3 id="section6">6. Termination</h3>
+        <p>We can stop providing access to our website at any time, without notice, for any reason.</p>
+        
+        <h3 id="section7">7. Contact Us</h3>
+        <p>If you have any questions about these terms, please contact us at [Your Contact Information].</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 Tyfia AI. All rights reserved.   <a href="terms.html">Terms & Conditions</a> <a href="privacy.html">Privacy</a></p>
+    </div>
+    <div>
+      
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('dropdown-menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+
+            // Get form values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // Create the mailto link
+            var mailtoLink = 'mailto:info@tyfia.ai' +
+                            '?subject=' + encodeURIComponent('Message from ' + name) +
+                            '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+
+            // Open the user's default email client
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>

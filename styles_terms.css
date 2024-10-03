@@ -1,0 +1,220 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #000000; /* Navbar background color */
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Company Name Styling */
+.navbar-brand a {
+    color: white;
+    font-size: 2.2em;
+    text-decoration: none;
+    font-weight: bold;
+  }
+/* Menu container styling */
+.menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Menu button styling */
+  .menu-btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .menu-btn:hover {
+    background-color: #000000;
+  }
+  
+  /* Dropdown menu (hidden by default) */
+  .dropdown-menu {
+    display: none; /* Hidden initially */
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+  }
+  
+  /* Dropdown menu links styling */
+  .dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #000000;
+  }
+/* Show the dropdown when the Menu button is clicked */
+.show {
+    display: block;
+    }
+  /* General section styling */
+.terms-section {
+    padding: 20px;
+    background-color: #000000;
+  }
+  
+  .terms-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Left side table styling */
+  .terms-table {
+    flex-basis: 30%;
+    padding-top: 5%;
+  }
+  
+  .terms-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .terms-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .terms-table td a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 20px;
+  }
+  
+  .terms-table td a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Right side terms text styling */
+  .terms-text {
+    flex-basis: 65%;
+    padding-left: 20px;
+  }
+  
+  .terms-text h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .terms-text h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  
+  .terms-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 800px) {
+    .terms-container {
+      flex-direction: column;
+    }
+  
+    .terms-text {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }
+  
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(to right, #000000, #000000);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-container p {
+    margin-bottom: 10px;
+    padding-right: 30px;
+  }
+  
+  .footer-container a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .footer-container .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-container .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 850px) {
+    .contact-section h2 {
+      font-size: 2em;
+    }
+  
+    .contact-section p {
+      font-size: 1em;
+    }
+  
+    button[type="submit"] {
+      width: 100%;
+    }
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default bullet points */
+}
+ul li {
+    position: relative;
+    padding-left: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px; /* Adjust depending on your text size */
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+}

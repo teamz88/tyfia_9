@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+  }
+  
+  .main-content {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+
+  /* Left section with background image */
+  .left-section {
+    flex: 1;
+    background-image: url('left.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+  }
+  
+  /* Company name at top center of left image */
+  .header-left {
+    position: absolute;
+    top: 20px;
+    padding-left: 70px;
+    left: 30%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .header-left h2 {
+    padding-left: 30px;
+  }
+
+  /* Centered text */
+  .centered-text {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .centered-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .centered-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  
+  .centered-text p {
+    font-size: 1em;
+  }
+  
+  /* Full-width image */
+  .full-width-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Other section styles */
+  
+  /* Technology section */
+  .technology-section {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .technology-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Left side: Technology title */
+  .tech-title h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Right side: Subtitle and text */
+  .tech-right-content {
+    max-width: 60%;
+  }
+  
+  .tech-right-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .tech-right-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 850px) {
+    .technology-layout {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .technology-section {
+      padding-top: 300px;
+    }
+  
+    .tech-title h1 {
+      font-size: 3em;
+    }
+  
+    .tech-right-content {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    .tech-right-content h2 {
+      font-size: 1.8em;
+    }
+  
+    .tech-right-content p {
+      font-size: 1em;
+    }
+  }
+  
+  
+  @media (max-width: 850px) {
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+    }
+    
+    .header-left {
+        padding-left: 70px;
+        left: 35%;
+    }
+
+    .centered-text p {
+      font-size: 0.7em;
+    }
+
+    .technology-section p {
+      font-size: 1em;
+    }
+  }
+  
+/* Contact section */
+.contact-section {
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #000000);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, 
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #2e3031;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+
+  .form-group input, 
+  .form-group textarea {
+    background-color: white; /* Set the background color to white */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .form-group ::placeholder {
+    color: #000000;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(to right, #000000, #000000);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-container p {
+    margin-bottom: 10px;
+    padding-right: 30px;
+  }
+
+  .footer-container a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .footer-container .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-container .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 850px) {
+    .contact-section h2 {
+      font-size: 2em;
+    }
+  
+    .contact-section p {
+      font-size: 1em;
+    }
+  
+    button[type="submit"] {
+      width: 100%;
+    }
+  }
+  
+
+  /* Menu button inside a white rectangle */
+.menu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+  }
+  
+  .menu-btn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+    width: 150px;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #000000;
+  }
+  
+  /* Show the dropdown when the Menu button is clicked */
+  .show {
+    display: block;
+  }
+  
+  

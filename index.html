@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tyfia AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main content section -->
+  <div id="home" class="main-content">
+    <!-- Left section with background image -->
+    <div class="left-section">
+        <div class="header-left">
+            <h2>Tyfia AI</h2>
+            <br>
+            <br>
+            <br>
+            <div class="centered-text">
+                <h1>Innovate with AI</h1>
+                <p>Discover the Future of AI Technology</p>
+                <br>
+                <br>
+                <div class="mission-frame">
+                  <h3>Our Mission</h3>
+                  <p>
+                    Welcome to Tyfia AI, where innovation meets intelligence. Founded on the belief that artificial intelligence can revolutionize the way businesses operate, we are dedicated to creating cutting-edge AI solutions that empower organizations to reach new heights.
+
+                    At Tyfia AI, we specialize in developing AI-driven technologies that enhance decision-making, automate complex processes, and unlock unprecedented insights from data.                    
+                  </p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-btn" onclick="toggleMenu()">Menu</div>
+            <div class="dropdown-menu" id="dropdown-menu">
+              <a href="#home">Home</a>
+              <a href="#technology">Technology</a>
+              <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Technology section -->
+  <div id="technology" class="technology-section">
+    <div class="technology-layout">
+      <div class="tech-title">
+        <h1>Technology</h1>
+      </div>
+      <div class="tech-right-content">
+        <h2>Powering the AI Revolution</h2>
+        <p>
+          Our team of experts, composed of data scientists, machine learning engineers, and industry professionals, 
+          brings together years of experience and a passion for pushing the boundaries of what's possible. We 
+          understand that every business is unique, which is why we tailor our AI solutions to meet the specific 
+          needs of our clients. Whether you're looking to improve customer engagement, optimize operations, or 
+          explore new opportunities, we have the expertise to help you achieve your goals. Our mission is to 
+          make AI accessible and beneficial for businesses of all sizes. We believe in the transformative power 
+          of AI and are committed to delivering solutions that are not only advanced but also ethical and transparent.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Full-width image after Technology -->
+  <div class="full-width-image">
+    <img src="full2.jpg" alt="AI Full Width Image After Technology">
+  </div>
+
+   <!-- Contact section -->
+   <div id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you. Fill out the form below and we'll get in touch with you as soon as possible.</p>
+    <form id="contact-form" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 Tyfia AI. All rights reserved.        <a href="terms.html">Terms & Conditions </a> <a href="privacy.html">Privacy</a></p>
+    </div>
+    <div>
+      
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('dropdown-menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+
+            // Get form values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // Create the mailto link
+            var mailtoLink = 'mailto:info@tyfia.ai' +
+                            '?subject=' + encodeURIComponent('Message from ' + name) +
+                            '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+
+            // Open the user's default email client
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>
